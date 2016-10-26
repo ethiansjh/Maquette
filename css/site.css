@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Lato');
-/*!
- * Default theme for Pingendo 
- * Homepage: http://pingendo.com  
- * Copyright 2015 Pingendo 
- * Licensed under MIT 
- * Based on Bootstrap v3.3.4
-*/
+
 #buttons
 {
     display: inline-block;
@@ -299,7 +293,7 @@ td,
 th {
   padding: 0;
 }
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
 @media print {
   *,
   *:before,
@@ -6881,4 +6875,3 @@ body {
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
 }
-/* PINGENDO COMMENT DO NOT REMOVE */
