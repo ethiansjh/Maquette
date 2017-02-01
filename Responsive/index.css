@@ -1,0 +1,318 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  text-align: center;
+  padding-top: 2%;
+  height: 55px;
+  position: absolute;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.nav_list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.nav_item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav_item a {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #d8d8d8;
+  border-color: #979797;
+  padding: 1.5em;
+}
+
+.starwars-bg img {
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+}
+
+
+
+
+.description {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.text_img {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  z-index: 100;
+  margin-left: 5vw;
+}
+.text_img img {
+  float: right;
+  vertical-align: middle;
+}
+
+.title {
+margin: 0;
+}
+
+.text p {
+  text-align: left;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.story {
+  padding: 10%;
+}
+.droide img {
+  float: left;
+  margin-right: 3vw;
+  vertical-align: middle;
+}
+
+.post-content2 p {
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 1px;
+  line-height: 29px;
+  float: right;
+}
+.story h1 {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 2%;
+  font-weight: normal;
+  text-align: center;
+}
+
+.troopers {
+  padding-top: 5%;
+}
+.troopers img {
+  width: 100%;
+  background-size: 100%;
+}
+
+footer {
+  background-color: #181818;
+  height: 250px;
+  background-image: url(image/darthvader.jpg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+footer div {
+  color: #717171;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .kylo {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .post-content p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 10vw;
+    vertical-align: middle;
+  }
+
+  .text {
+    margin-right: 3vw;
+  }
+
+  .plus {
+    width: 400px;
+  }
+
+  .mystere {
+    width: 405px;
+  }
+
+  .box_title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+
+  }
+  .box-left {
+    text-align: center;
+    width: 30%;
+    margin-top: -10%;
+  }
+  .box-mid {
+    text-align: center;
+    width: 40%;
+    margin-top: -10%;
+  }
+  .box-right {
+    text-align: center;
+    width: 30%;
+    margin-top: -10%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .kylo img {
+    margin-left: -42%;
+    width: 190%;
+    height: 400px;
+  }
+
+  .post-content2 {
+    display: none;
+  }
+  .story h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .post-content p {
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 25px;
+    font-size: 80%;
+  }
+
+  .starwars-bg {
+    width: 150%;
+    margin-left: -25%;
+  }
+
+  .box_title {
+    display: none;
+  }
+
+  .box-left, .box-mid {
+    text-align: center;
+    margin-bottom: 20%;
+  }
+
+  .box-right {
+    text-align: center;
+    display: flex;
+  }
+
+  .box {
+    width: 50%;
+  }
+  .box-right ul {
+    float: right;
+  }
+  .troopers {
+    width: 200%;
+    margin-left: -60%;
+  }
+  .droide img {
+    margin-bottom: 10%;
+  }
+  .text p {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .plus, .mystere {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .nav, .box_title, .text_img {
+    display: none;
+  }
+  .box-left {
+    width: 50%;
+  }
+  .box-mid {
+    width: 50%;
+  }
+
+  .box-right {
+    width: 699px;
+  }
+}
+
+.box-left ul {
+  line-height: 30px;
+}
+
+.box-mid ul {
+  line-height: 30px;
+}
+
+.box-right ul {
+  list-style: none;
+  display: inline-block;
+  margin-left: -0.3em;
+}
+.box-right img {
+  width: 120%;
+}
+
+.box-right li {
+  position: relative;
+  float: left;
+}
+footer {
+  font-size: 80%;
+}
+.box-right a {
+  text-decoration: none;
+  float: left;
+  text-align: center;
+  white-space: nowrap;
+  padding: .2em 1em;
+}
+
+footer a:visited {
+  color: inherit;
+}

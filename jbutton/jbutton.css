@@ -1,0 +1,42 @@
+.container {
+	width: 900px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	position: absolute;
+	z-index: 1;
+	top: 20%;
+	left: 12%;
+	text-align: center;
+}
+
+.btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #FFF;
+}
+
+.red {
+	background-color: #D9534F;
+	border-color: #D43F3A;
+}
+
+.green {
+	background-color: #5CB85C;
+	border-color: #4CAE4C;
+}

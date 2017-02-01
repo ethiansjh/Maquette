@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+        <title>Bienvenue au CE BNP Paribas</title>
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-compatible">
+    </head>
+    <style>
+        body
+        {
+            font-family: tahoma,sans-serif;
+        }
+        #cce
+        {
+            width: 30%;
+            height: auto;
+        }
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img
+        {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+        }
+        #starwars
+         {
+            object-position: 50% 10%;
+        }
+        #midi,#remb,#ouz
+        {
+            object-position: 50% 25%;
+        }
+        .carousel-inner > .item
+        {
+            transition: 1s ease-in-out, left;
+        }
+        .navbar
+        {
+            background-color: white;
+            margin: 0;
+        }
+        .carousel-caption
+        {
+            max-height: 100%;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            bottom: initial;
+        }
+        .carousel-indicators
+        {
+            bottom: -10px;
+        }
+        a
+        {
+            display: block;
+        }
+        li.dropdown a.dropdown-toggle
+        {
+            min-width: 23px;
+            max-width: 100%;
+            height: 73px;
+            padding-left: 42px;
+            text-align: center;
+            background-color: #248e59;
+            font-size: 20px;
+            color: #fff;
+            position: relative;
+        }
+        .form-group
+        {
+            margin-bottom: 10px;
+        }
+        #login-dp .help-block
+        {
+            font-size: 12px;
+        }
+        #login-dp
+        {
+            min-width: 250px;
+            padding: 14px 14px 0;
+            overflow: hidden;
+            background-color: white;
+        }
+       .navbar .navbar-search .dropdown-menu
+        {
+            min-width: 25px;
+        }
+        .form-control
+        {
+            min-width: 250px;
+        }
+        #res
+        {
+            display:inline-block;
+            width: 300px;
+            height: auto;
+            vertical-align: middle;
+            margin: 0;
+        }
+        #tex
+        {
+            text-align: center;
+            margin: 0;
+        }
+        .thumbnails > li
+        {
+            float: left;
+            margin-bottom: 18px;
+            margin-left: 12%;
+        }
+        .span3
+        {
+            width: 240px;
+            
+        }
+        li
+        {
+            display: list-item;
+            text-align: left;
+        }
+        ul
+        {
+            display: block;
+            list-style-type: none;
+            margin-top: 50px;
+        }
+        .thumbnail
+        {
+            border-style: solid;
+            border-width: thick;
+        }
+        #t1,#t2,#t3
+        {
+            border-color: white;
+        }
+        #temh1
+        {
+            color: white;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 15px;
+        }
+        #testimonial
+        {
+            background-color: #248e59;
+        }
+        #temb
+        {
+            border-radius: 4px;
+        }
+        .logo > li
+        {
+            float: left;
+            margin-left: 12%;
+            margin-bottom: 3%;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        .logo > li:hover
+        {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+        #kadeo
+        {
+            height: 90px;
+        }
+        #fnac
+        {
+            height: 140px;
+        }
+        #gaumont
+        {
+            height: 120px;
+        }
+        #part
+        {
+            text-align: center;
+        }
+        .contacts a, .social a, .propos a
+        {
+            float: left;
+        }
+        footer
+        {
+            background-color: black;
+        }
+        .contact
+        {
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+        }
+        footer p
+        {
+            color: white;
+        }
+        div.container
+        {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            padding-top: 10px;
+        }
+        div.container img
+        {
+            max-width: 30%;
+        }
+        div.socials img.social
+        {
+            max-width: 15%;
+        }
+        .social
+        {
+            margin-right: 10px;
+        }
+        img.social:hover
+        {
+            filter: invert(50%);
+            -webkit-filter: invert(50%);
+        }
+          ul.navbar-right li#activ
+        {
+            background-color: lightslategray;
+        }
+        ul.navbar-right li#activ a
+        {
+            color: white;
+        }
+        ul.navbar-right li
+        {
+            margin: 0;
+            min-width: 23px;
+            max-width: 100%;
+            height: 73px;
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+        }
+    </style>
+    <body>
+        <!--header-->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid"></div>
+        <div class="navbar-header">
+            <a href="#"><img src="img/cce.png" id="cce"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-search btn-success">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <span class="label-icon">Search</span>
+                    </button>
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <span class="label-icon">Par le nom</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <span class="label-icon">Par l'ID</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+               <li id="activ" role="presentation"><a href="#">Mon compte<span class="sr-only">(current)</span></a></li>
+              <li id="noti"><a href="#">Notifications<span class="sr-only"></span></a></li>
+              <li id="flag"><a href="#">Flags<span class="sr-only"></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+             <ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Username</label>
+											 <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Username" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block"><a href="#">Oublié le mot de passe ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Connecter</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> Souvenir mon Identifiant
+											 </label>
+										</div>
+								 </form>
+							</div>
+					 </div>
+				</li>
+			</ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <!--contenu-->
+        <!--slide-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!--contenu interieur-->
+        <div class="carousel-inner">
+            <!--star wars-->
+            <div class="item active">
+                <img src="img/starwars.jpg" id="starwars">
+            <div class="carousel-caption">
+                <h1>AVANT-PREMIERE<br>14 Décembre</h1><br>
+                <button class="btn btn-danger" id="res">Réserver</button>
+            </div>
+          </div>
+            <!--uzebekistan-->
+            <div class="item">
+                <img src="img/uze.jpg" id="ouz">
+                <div class="carousel-caption">
+                    <h1 id="tex">VOYAGE COLLECTIF<br>Ouzbékistan</h1><br>
+                    <button class="btn btn-primary" id="res">Réserver</button><br>
+                    <p id="tex">Place disponible</p>
+                </div>
+            </div>
+            <!--midi-pyrenees-->
+            <div class="item">
+                <img src="img/midi.jpg" id="midi">
+                <div class="carousel-caption">
+                    <h1 id="tex">VACANCES EN MIDI-PYRENEES</h1><br>
+                    <button class="btn btn-success" id="res">Réserver</button>
+                        <p id="tex">Réservé aux enfants des salariés BNP Paribas et ses filiales</p>
+                </div>
+            </div>
+            <!--remboursement-->
+            <div class="item">
+                <img src="img/remb.jpg" id="remb">
+                <div class="carousel-caption">
+                    <h2 id="tex">Nouvelle conditions de remboursement <br>des frais de garde pour vos enfants</h2><br>
+                    <button class="btn btn-primary" id="res">VOIR </button>
+                </div>
+            </div>
+            </div>
+            <!--controles-->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="temoin" id="testimonial">
+            <h1 id="temh1">Témoignages</h1>
+            <div class="row">
+                <ul class="thumbnails">
+                    <li class="span3">
+                        <div class="thumbnail" id="t1">
+                            <img src="img/pers.jpg" alt="thumbnail">
+                            <div class="caption">
+                                <h2>Baudouin P.</h2>
+                                <p>Je suis vraiment content d'avoir pu participer à l'avant-première STAR WARS hier soir. C'était magnifique!! J'ai eu la réduction équivalente à...</p>
+                                <button class="btn-group btn-group-justified btn btn-warning" id="temb">Lire plus-></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail" id="t2">
+                            <img src="img/pers2.png" alt="thumbnail">
+                            <div class="caption">
+                                <h2>Berenberg B.</h2>
+                                <p>J'étais toujous insatisfait des tickets restaurant...seulement 7 euros mais, bonne nouvelle, grâce au CE, les tickets sont maintenant...</p>
+                                <button class="btn-group btn-group-justified btn btn-warning" id="temb">Lire plus-></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail" id="t3">
+                            <img src="img/pers3.jpg" alt="thumbnail">
+                            <div class="caption">
+                                <h2>Inconnu</h2>
+                                <p>Grâce au CE, pour la première fois dans ma vie, j'ai pu partir à l'étranger, toujours occupée de travail même pendant les vacances. Juste LOL...</p>
+                                <button class="btn-group btn-group-justified btn btn-warning" id="temb">Lire plus-></button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="partenaire">
+            <h1 id="part">Nos derniers partenaires</h1>
+            <div class="row">
+             <ul class="logo">
+                <li class="logolist">
+                    <div class="logos">
+                        <img class="logoimg" id="kadeo" src="img/kadeo.png">
+                    </div>
+                 </li>
+                <li class="logolist">
+                    <div class="logos">
+                        <img class="logoimg" id="fnac" src="img/fnac.png">
+                    </div>
+                </li>
+                <li class="logolist">
+                    <div class="logos">
+                        <img class="logoimg" id="gaumont" src="img/gaumont.png">
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="col-md-2 details">
+                    <div class="icon">
+                        <img class="contact" src="img/tel.png">
+                    </div>
+                    <p>080 42 00 00 00</p>
+                </div>
+                <div class="col-md-2 details">
+                    <div class="icon">
+                        <img class="contact" src="img/add.png">
+                    </div>
+                    <p>1, Rue de paris<br>75015 Paris</p>
+                </div>
+                <div class="col-md-2 details">
+                    <div class="icon">
+                        <img class="contact" src="img/mail.png">
+                    </div>
+                    <p>ce@bnparibas.fr</p>
+                </div>
+                <div class="col-md-3 details">
+                    <div class="socials">
+                        <p>Suivez notre actualité</p>
+                        <img class="social" src="img/fb.png">
+                        <img class="social" src="img/twitter.png">
+                        <img class="social" src="img/insta.png">
+                    </div>
+                </div>
+                 <div class="col-md-3">
+                    <div class="propos">
+                        <p>A Propos de nous</p>
+                        <div class="texte">
+                        <p>Banque européenne parmi les plus jeunes, BNP Paribas voit le jour en 2000 de la fusion de la banque d’affaires Paribas et de la BNP, banque numéro un en France.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </body>
+</html>

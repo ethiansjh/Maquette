@@ -1,0 +1,743 @@
+/*Created by jaehyun BAIK*/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: "PT Mono", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    color: #7b7b7b;
+    line-height: 26px;
+    display: block;
+}
+
+a {
+    transition: all 0.5s ease ;
+    color: #1d2dfd;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover, a:active, a:focus {
+    color: #7b7b7b;
+    outline: none;
+    border-bottom: 2px solid #1d2dfd;
+
+}
+
+p {
+    margin: 0 0 20px 0;
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+@font-face {
+    font-family: "PT Mono";
+    src: url('pt-mono/PTM55F.ttf')
+}
+
+main {
+    display: block;
+}
+
+footer {
+    padding-bottom: 2em;
+}
+
+ul {
+    display: block;
+}
+nav ul > li > a {
+    padding: 5px 0;
+    margin: 0 10px;
+    color: #7c7c7c;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: "PT Mono";
+    font-weight: 400;
+    display: block;
+    color: #000000;
+}
+
+h3, .h3 {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 400;
+    display: block;
+}
+
+hr {
+    box-sizing: content-box;
+    display: block;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 990px;
+}
+
+.social ul {
+    display: block;
+    list-style-type: disc;
+    line-height: 24px;
+    margin-top: 0;
+    padding: 0;
+    margin: 0 0 2em 0;
+                            
+}
+.social li {
+    display: inline;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social ul a {
+    color: #7c7c7c;
+    padding: 4px 0;
+    margin: 0 10px 0 0;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+.social {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    left: 50%;
+    width: 50%;
+}
+.box_row {
+    margin-left: -15px;
+    margin-right: -15px;
+    clear: both;
+    /*display: table;*/
+}
+
+
+.space-small {
+    height: 50px;
+    clear: both;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.outro h2 {
+    font-size: 50px;
+    line-height: 68px;
+    color: #000000;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.outro {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px; 
+    padding-right: 15px;
+    width: 50%;
+    float: left;
+}
+
+.space-mid {
+    height: 80px;
+    clear: both;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    text-align: center;
+}
+.icono-plus {
+    font-size: 30px;
+}
+.icon {
+    line-height: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.menu-icon {
+    font-size: 20px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.text-center {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.view {
+    text-align: center;
+}
+
+.case {
+    position: relative;
+    margin-bottom: 30px;
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 1px;
+}
+
+.case img {
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.case a {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-bottom: none !important;
+}
+
+.intro-sub {
+    margin: 2em 0;
+    left: 50%;
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.intro {
+    margin-bottom: 2em;
+    display: block;
+}
+
+.intro h1 {
+    font-size: 72px;
+    color: #000000;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.getStart {
+    position: absolute;
+    right: 0;
+    top: 0; 
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 0 7px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    text-align: center;
+    line-height: 24px;
+}
+
+nav ul > li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 7px 0;
+    list-style: none;
+}
+
+.active a {
+    color: #7c7c7c;
+    border-bottom: 2px solid #1d2dfd;
+}
+
+.main-nav {
+    position: relative;
+    margin-top: 24px;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.logo a:hover {
+    border-bottom: transparent;
+}
+.inlay {
+    opacity: 0;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    z-index: 55;
+}
+
+.inlay_text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: 56;
+    width: 100%;
+    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -36px;
+}
+
+.inlay_text h2 {
+    display: block;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #000000;
+    font-size: 18px !important;
+    line-height: 20px !important;
+    font-weight: 400;
+    text-align: center;
+}
+.inlay_text ul {
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.inlay_text li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+    font-size: 11px;
+    color: #7b7b7b;
+}
+
+.inlay:hover {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ti-plus {
+    font-size: 30px;
+}
+
+.icon {
+    color: #7b7b7b;
+}
+
+.big_one {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-columns {
+    width: 33.33333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-columns h2 {
+    display: block;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 400;
+    color: #000000;
+}
+
+.call_chat {
+    background-color: #1d2dfd;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.call_chat_wrap {
+    position: relative;
+    padding: 50px 0;
+    display: table;
+    width: 100%;
+}
+
+.call_chat_inlay {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 50px;
+    line-height: 62px;
+    color: #ffffff !important;
+    width: 100%;
+    text-align: center;
+}
+
+.call_chat_text {
+    font-size: 50px;
+    line-height: 60px;
+    font-family: "PT Mono", sans-serif;
+    text-transform: uppercase;
+}
+/*Created by jaehyun BAIK*/
+.call_chat_button {
+    margin-bottom: 0 !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #ffffff !important;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid #eaeaea !important;
+    background: transparent;
+    font-family: "PT Mono";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    touch-action: manipulation;
+    white-space: nowrap;
+    user-select: none;
+}
+/*Created by jaehyun BAIK*/
+.space-xsmall {
+    height: 30px;
+    clear: both;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+/*Created by jaehyun BAIK*/
+.heading_call_chat {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #7b7b7b;
+    text-align: center;
+}
+/*Created by jaehyun BAIK*/
+.space-xlarge {
+    height: 150px;
+    clear: both;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+/*Created by jaehyun BAIK*/
+.tabs {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Created by jaehyun BAIK*/
+.heading_text {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #7b7b7b;
+    text-align: center;
+}
+/*Created by jaehyun BAIK*/
+.tab_center {
+    width: 100%;
+    margin: 0px;
+    clear: both;
+    display: block;
+    /*border-bottom: 1px solid #ebebeb;*/
+}
+/*Created by jaehyun BAIK*/
+#text_center {
+    text-align: center;
+}
+
+/*Created by jaehyun BAIK*/
+.tab_list {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    line-height: 24px;
+    text-align: center;
+}
+/*Created by jaehyun BAIK*/
+.tab_item {
+    font-weight: 600;
+    padding: 18px 15px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 4px 0 0;
+    list-style: none;
+    cursor: pointer;
+    /*float: none;*/
+}
+/*Created by jaehyun BAIK*/
+.tab_active {
+    position: relative;
+    color: #1d2dfd;
+    border: 1px solid #ebebeb !important;
+    margin-bottom: -1px !important;
+    padding: 17px 14px 19px 14px !important;
+    border-top: 1px solid #ebebeb !important;
+    border-bottom: 0px #fff solid !important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/*Created by jaehyun BAIK*/
+.sub_content {
+    text-align: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    float: left;
+}
+/*Created by jaehyun BAIK*/
+.main_title {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+/*Created by jaehyun BAIK*/
+.main_title h2 {
+    line-height: 3 !important;
+}
+/*Created by jaehyun BAIK*/
+.tab_container {
+    padding: 0px;
+    background: #fff;
+    clear: left;
+}
+/*Created by jaehyun BAIK*/
+.tab_content_active {
+    text-align: left;
+    border: none;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    padding-top: 30px;
+    box-shadow: none;
+}
+/*Created by jaehyun BAIK*/
+#tab_right {
+    width: 30%;
+    float: left;
+    margin-top: 3px;
+    text-align: unset;
+}
+/*Created by jaehyun BAIK*/
+#tab_right_list_active {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 18px 15px 19px 14px !important;
+    border: 1px solid #ebebeb !important;
+    border-left: none !important;
+    margin-bottom: 4px !important;
+    border-right: 1px #fff solid !important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+/*Created by jaehyun BAIK*/
+.tab_right_container {
+    padding: 0px;
+    border-left: 1px solid #ebebeb;
+    border-top: 0px !important;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+    text-align: left;
+    padding: 15px;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-shadow: none;
+}
+
+.tab_right_active {
+    border: none;
+    word-wrap: break-word;
+}
+
+.pricing-table {
+    width: 33.33333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.space-xxs {
+    height: 30px;
+    clear: both;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inside_button {
+    border: 2px solid #ebebeb !important;
+    background: transparent;
+    color: #2a2e37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    touch-action: manipulation;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.pricing-table-item-head {
+    background: #1d2dfd;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.pricing-table-item-head p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.pricing-table-item-head h3 {
+    font-size: 70px;
+    position: relative;
+    display: inline-block;
+    color: #ffffff !important;
+}
+
+.pricing-table-item-head h3 sup {
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2px;
+    margin-left: -7px;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+.pricing-table-item-head h3 span {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pricing-table-item-body {
+    border: 2px solid #ccc;
+    border-top: none;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.pricing-table-item-body ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.pricing-table-item-body ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: list-item;
+}
+
+strong {
+    font-weight: bold;
+}
+/*Created by jaehyun BAIK*/
